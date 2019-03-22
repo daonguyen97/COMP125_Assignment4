@@ -1,0 +1,108 @@
+﻿<!-- Assignment 4-->
+<!-- 300986569 _ Huu Dao Nguyen-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Membership Registration</title>
+    <link href="./Style/membership.css" rel="stylesheet" />
+    <link href="./Style/bootstrap.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav nav-pills nav-justified">
+            <a class="nav-link" href="Index.html">Home</a>
+            <a class="nav-link" href="About.html">About</a>
+            <a class="nav-link" href="List.html">Menu</a>
+            <a class="nav-link" href="Estimate.html">Estimate Price</a>
+            <a class="nav-link active" href="membership.html">Register</a>
+        </nav>
+        <form class="form-horizontal" role="form">
+            <h2>Registration</h2>
+            <div class="form-group">
+                <label for="firstName" class="col-sm-3 control-label">First Name*</label>
+                <div class="col-sm-9">
+                    <input type="text" id="firstName" placeholder="First Name" class="form-control" autofocus>
+                    <p id="firstNameerr" class="help-block" style="color:red"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastName" class="col-sm-3 control-label">Last Name*</label>
+                <div class="col-sm-9">
+                    <input type="text" id="lastName" placeholder="Last Name" class="form-control" autofocus>
+                    <p id="lastNameerr" class="help-block" style="color:red"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address" class="col-sm-3 control-label">Address </label>
+                <div class="col-sm-9">
+                    <input type="text" id="address" placeholder="Address" class="form-control" name="address">
+                    <p id="addresserr" class="help-block" style="color:red"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="city" class="col-sm-3 control-label">City </label>
+                <div class="col-sm-6">
+                    <input type="text" id="city" placeholder="City" class="form-control" name="city">
+                    <p id="cityerr" class="help-block" style="color:red"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="postalCode" class="col-sm-3 control-label">Postal Code </label>
+                <div class="col-sm-6">
+                    <input type="text" id="postalCode" placeholder="A1B2C3" class="form-control" name="postalcode">
+                    <p id="postalCodeerr" class="help-block" style="color:red"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="province" class="col-sm-3 control-label">Province </label>
+                <div class="col-sm-6">
+                    <select id="province" placeholder="Pronvice" class="form-control" name="provinces">
+                        <option value="QC">QC</option>
+                        <option value="ON">ON</option>
+                        <option value="MN">MN</option>
+                        <option value="SK">SK</option>
+                        <option value="AB">AB</option>
+                        <option value="BC">BC</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Age" class="col-sm-3 control-label">Age* </label>
+                <div class="col-sm-6">
+                    <input type="number" id="age" placeholder="Age" class="form-control" name="age">
+                    <p id="ageerr" class="help-block" style="color:red"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-3 control-label">Password*</label>
+                <div class="col-sm-9">
+                    <input type="password" id="password" placeholder="Password" class="form-control">
+                    <p id="passworderr" class="help-block" style="color:red"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="repassword" class="col-sm-3 control-label">Confirm Password*</label>
+                <div class="col-sm-9">
+                    <input type="password" id="repassword" placeholder="Password" class="form-control">
+                    <p id="repassworderr" class="help-block" style="color:red"></p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">Email* </label>
+                <div class="col-sm-9">
+                    <input type="text" id="email" placeholder="Email" class="form-control">
+                    <p id="emailerr" class="help-block" style="color:red"></p>
+                </div>
+            </div>
+
+
+            <button type="button" class="btn btn-primary btn-block" onclick="openProfile()">Register</button>
+        </form>
+        
+    </div>
+<script src="./Script/membership.js"></script>
+</body>
+</html>
